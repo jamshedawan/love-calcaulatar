@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conter Application
-    </title>
+    <title>Love Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script
       type="text/javascript"
@@ -12,19 +11,20 @@
     ></script>
 </head>
 <body>
-  <div class="container-card">
-    <h1>Counter Application</h1>
-    <div class="counter-display" id="counterDisplay">0</div>
+     <div class="container">
+      <h1>Love Calculator</h1>
+      <div class="love-calculator">
+        <label for="name1">Your Name:</label>
+        <input type="text" id="name1" placeholder="Enter Your Name">
+        <label for="name2">Partner's Name:</label>
+        <input type="text" id="name2" placeholder="Enter Your Partner's Name">
 
-  <div class="button-container">
-    <button id="incrementBtn" class="blue-Btn">+</button>
-    <button id="decrementBtn" class="blue-Btn">_</button>
-  </div>
-    <button id="resetBtn">Reset</button>
+       <button onclick="calculateLove()">Calculate</button>
+       
 
-
-
-  </div>
+       <div id="result">Result</div>
+      </div>
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
